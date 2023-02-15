@@ -16,7 +16,7 @@
 }
 
 .criar-formulario form {
-  background: #C4EDFF;
+  background: #bfccd3;
 
   border: none;
   border-radius: 20px;
@@ -28,7 +28,7 @@
 }
 
 .criar-formulario form label {
-  color: #154580;
+  color: #942727;
   font-weight: bold;
   margin: 0 0 1rem;
 }
@@ -104,7 +104,7 @@ input[type='radio'] {
 }
 
 .custom-radio {
-  border: 1px solid #154580;
+  border: 1px solid #942727;
   width: 30px;
   height: 30px;
   display: grid;
@@ -115,7 +115,7 @@ input[type='radio'] {
 .custom-radio,
 span {
   transition: 0.5s ease;
-  color: #154580;
+  color: #942727;
 }
 
 .custom-radio span {
@@ -127,9 +127,9 @@ span {
 }
 
 input[type='radio']:checked+.custom-radio {
-  border-color: #154580;
+  border-color: #942727;
 }
 
 input[type='radio']:checked+.custom-radio span {
-  background: #154580;
+  background: #942727;
 }

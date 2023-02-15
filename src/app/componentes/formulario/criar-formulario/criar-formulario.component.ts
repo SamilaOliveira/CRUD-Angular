@@ -11,9 +11,17 @@ export class CriarFormularioComponent {
     id: '1',
     nome:  'Samila Oliveira',
     conteudo: 'Projeto Angular',
-    modelo: ''
+    modelo: 'modelo1'
   }
 
   constructor() {}
+
+  criarCadastro(){
+    alert("Novo cadastro criado!")
+  }
+
+  cancelar() {
+    alert("Cadastro cancelado!")
+  }
 
 }

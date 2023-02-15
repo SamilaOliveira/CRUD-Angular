@@ -10,7 +10,7 @@
       id="nome"
       name="nome"
       placeholder="Digite o nome completo"
-      [value]="formulario.nome">
+      [(ngModel)]="formulario.nome">
 
     <label for="cadastro">E-mail</label>
     <input
@@ -19,7 +19,7 @@
       id="email"
       name="email"
       placeholder="Digite o e-mail"
-      [value]="formulario.conteudo">
+      [(ngModel)]="formulario.conteudo">
 
       <label for="modelo">Selecione o modelo do card:</label>
       <div class="container-radio">
@@ -29,7 +29,8 @@
               type="radio"
               id="modelo1"
               value="modelo1"
-              name="modelo-card">
+              name="modelo-card"
+              [(ngModel)]="formulario.modelo" >
           <div class="custom-radio">
               <span></span>
           </div>
@@ -49,7 +50,8 @@
               type="radio"
               id="modelo2"
               value="modelo2"
-              name="modelo-card">
+              name="modelo-card"
+              [(ngModel)]="formulario.modelo">
           <div class="custom-radio">
               <span></span>
           </div>
@@ -69,7 +71,8 @@
               type="radio"
               id="modelo3"
               value="modelo3"
-              name="modelo-card">
+              name="modelo-card"
+              [(ngModel)]="formulario.modelo">
           <div class="custom-radio">
               <span></span>
           </div>
@@ -84,8 +87,8 @@
         </div>
       </div>
     <div class="acoes">
-      <button class="botao">Salvar</button>
-      <button class="botao">Cancelar</button>
+      <button (click)="criarCadastro()" class="botao">Salvar</button>
+      <button (click)="cancelar()" routerLink="/listarFormulario" class="botao">Cancelar</button>
     </div>
   </form>
 </section>
