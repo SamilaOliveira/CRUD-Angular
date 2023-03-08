@@ -8,6 +8,7 @@ import { RodapeComponent } from './componentes/rodape/rodape.component';
 import { CriarFormularioComponent } from './componentes/formulario/criar-formulario/criar-formulario.component';
 import { FormsModule } from '@angular/forms';
 import { ListarFormularioComponent } from './componentes/formulario/listar-formulario/listar-formulario.component';
+import { FormularioComponent } from './componetes/pensamentos/formulario/formulario.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ListarFormularioComponent } from './componentes/formulario/listar-formu
     CabecalhoComponent,
     RodapeComponent,
     CriarFormularioComponent,
-    ListarFormularioComponent
+    ListarFormularioComponent,
+    FormularioComponent
   ],
   imports: [
     BrowserModule,

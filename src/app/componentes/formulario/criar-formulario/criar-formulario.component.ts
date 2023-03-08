@@ -9,9 +9,9 @@ export class CriarFormularioComponent {
 
   formulario = {
     id: '1',
-    nome:  'Samila Oliveira',
-    conteudo: 'Projeto Angular',
-    modelo: 'modelo1'
+    nome:  '',
+    conteudo: '',
+    modelo: ''
   }
 
   constructor() {}
