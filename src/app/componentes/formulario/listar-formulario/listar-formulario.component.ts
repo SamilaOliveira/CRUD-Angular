@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Formulario } from '../formulario';
 
 @Component({
   selector: 'app-listar-formulario',
@@ -7,13 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListarFormularioComponent implements OnInit {
 
-  listaFormularios = [
-    {
-      nome: 'gasdasdasdasda',
-      email: 'samilacampelo@gmail.com',
-      modelo: 'modelo1'
-    }
-  ];
+  listaFormularios: Formulario[] = [];
 
   constructor(){}
 

@@ -1,0 +1,14 @@
+<div class="formulario {{ formulario.modelo }} ff-roboto-mono"
+ [ngClass]="larguraFormulario()">
+    <img src="/assets/imagens/{{ formulario.modelo }}.png" alt="Aspas coloridas">
+    <p class="nome">{{ formulario.nome }}</p>
+    <p class="nome">{{ formulario.email }}</p>
+    <div class="acoes">
+        <button class="botao-editar">
+            <img src="/assets/imagens/icone-editar.png" alt="Ícone de editar">
+        </button>
+        <button class="botao-excluir">
+            <img src="/assets/imagens/icone-excluir.png" alt="Ícone de excluir">
+        </button>
+    </div>
+</div>

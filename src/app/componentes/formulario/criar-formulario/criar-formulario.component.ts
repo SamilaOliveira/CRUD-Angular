@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Formulario } from '../formulario';
 
 @Component({
   selector: 'app-criar-formulario',
@@ -7,10 +8,10 @@ import { Component } from '@angular/core';
 })
 export class CriarFormularioComponent {
 
-  formulario = {
-    id: '1',
+  formulario: Formulario = {
+    id: 1,
     nome:  '',
-    conteudo: '',
+    email: '',
     modelo: ''
   }
 

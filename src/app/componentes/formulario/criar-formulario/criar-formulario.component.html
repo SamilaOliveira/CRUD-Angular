@@ -19,7 +19,7 @@
       id="email"
       name="email"
       placeholder="Digite o e-mail"
-      [(ngModel)]="formulario.conteudo">
+      [(ngModel)]="formulario.email">
 
       <label for="modelo">Selecione o modelo do card:</label>
       <div class="container-radio">
@@ -39,8 +39,8 @@
           Prévia:
           <div class="modelo modelo1 ff-roboto-mono">
             <img src="../../../../assets/imagens/modelo1.png" alt="Aspas azuis">
-            <p class="conteudo">{{ formulario.nome }}</p>
-            <p class="autoria"><b>{{ formulario.conteudo }}</b></p>
+            <p class="nome">{{ formulario.nome }}</p>
+            <p class="email"><b>{{ formulario.email }}</b></p>
           </div>
         </div>
 
@@ -61,7 +61,7 @@
           <div class="modelo modelo2 ff-roboto-mono">
             <img src="../../../../assets/imagens/modelo2.png" alt="Aspas azul claro">
             <p class="conteudo">{{ formulario.nome }}</p>
-            <p class="autoria"><b>{{ formulario.conteudo }}</b></p>
+            <p class="email"><b>{{ formulario.email }}</b></p>
           </div>
         </div>
 
@@ -82,7 +82,7 @@
           <div class="modelo modelo3 ff-roboto-mono">
             <img src="../../../../assets/imagens/modelo3.png" alt="Aspas verdes">
             <p class="conteudo">{{ formulario.nome }}</p>
-            <p class="autoria"><b>{{ formulario.conteudo }}</b></p>
+            <p class="email"><b>{{ formulario.email }}</b></p>
           </div>
         </div>
       </div>
