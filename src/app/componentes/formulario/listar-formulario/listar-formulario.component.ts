@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Formulario } from '../formulario';
+import { FormularioService } from '../formulario.service';
 
 @Component({
   selector: 'app-listar-formulario',
@@ -10,10 +11,12 @@ export class ListarFormularioComponent implements OnInit {
 
   listaFormularios: Formulario[] = [];
 
-  constructor(){}
+  constructor(private service: FormularioService){}
 
   ngOnInit(): void {
-
+    this.service.listar().subscribe((listaFormularios) => {
+      this.listaFormularios = listaFormularios
+    })
   }
 
 }

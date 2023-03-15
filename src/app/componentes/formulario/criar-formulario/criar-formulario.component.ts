@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { Formulario } from '../formulario';
+import { FormularioService } from '../formulario.service';
 
 @Component({
   selector: 'app-criar-formulario',
@@ -9,20 +11,26 @@ import { Formulario } from '../formulario';
 export class CriarFormularioComponent {
 
   formulario: Formulario = {
-    id: 1,
     nome:  '',
     email: '',
     modelo: ''
   }
 
-  constructor() {}
+  constructor(
+    private service: FormularioService,
+    private router: Router
+    ) {}
 
   criarCadastro(){
-    alert("Novo cadastro criado!")
+    alert("Cadastro realizado!")
+    this.service.criar(this.formulario).subscribe(() => {
+      this.router.navigate(['/listarFormulario'])
+    })
   }
 
   cancelar() {
     alert("Cadastro cancelado!")
+    this.router.navigate(['/listarFormulario'])
   }
 
 }
