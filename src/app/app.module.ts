@@ -10,6 +10,7 @@ import { ListarFormularioComponent } from './componentes/formulario/listar-formu
 import { FormularioComponent } from './componetes/formularios/formulario/formulario.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ExcluirFormularioComponent } from './componentes/formulario/excluir-formulario/excluir-formulario.component';
+import { EditarFormularioComponent } from './componentes/formulario/editar-formulario/editar-formulario.component';
 
 @NgModule ({
   declarations: [
@@ -19,7 +20,8 @@ import { ExcluirFormularioComponent } from './componentes/formulario/excluir-for
     CriarFormularioComponent,
     ListarFormularioComponent,
     FormularioComponent,
-    ExcluirFormularioComponent
+    ExcluirFormularioComponent,
+    EditarFormularioComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,7 @@ import { ExcluirFormularioComponent } from './componentes/formulario/excluir-for
     FormsModule,
 
   ],
-  providers: [],
+  providers: [HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

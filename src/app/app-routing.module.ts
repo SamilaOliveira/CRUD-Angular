@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CriarFormularioComponent } from './componentes/formulario/criar-formulario/criar-formulario.component';
+import { ExcluirFormularioComponent } from './componentes/formulario/excluir-formulario/excluir-formulario.component';
 import { ListarFormularioComponent } from './componentes/formulario/listar-formulario/listar-formulario.component';
 
 const routes: Routes = [
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path:'listarFormulario',
     component: ListarFormularioComponent
+  },
+  {
+    path:'formulario/excluirFormulario/:id',
+    component: ExcluirFormularioComponent
   }
 ];
 
