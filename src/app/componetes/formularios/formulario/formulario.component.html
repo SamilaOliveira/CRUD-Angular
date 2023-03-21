@@ -5,7 +5,9 @@
     <p class="nome">{{ formulario.email }}</p>
     <div class="acoes">
         <button class="botao-editar">
-            <img src="/assets/imagens/icone-editar.png" alt="Ícone de editar">
+            <img src="/assets/imagens/icone-editar.png"
+            routerLink="/formulario/editarFormulario/{{formulario.id}}"
+            alt="Ícone de editar">
         </button>
         <button class="botao-excluir" routerLink="/formulario/excluirFormulario/{{formulario.id}}">
             <img src="/assets/imagens/icone-excluir.png" alt="Ícone de excluir">

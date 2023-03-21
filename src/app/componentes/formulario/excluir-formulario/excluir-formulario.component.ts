@@ -21,21 +21,24 @@ export class ExcluirFormularioComponent implements OnInit {
     private service: FormularioService,
     private router: Router,
     private route: ActivatedRoute
-    ) { }
+  ) { }
 
-    ngOnInit(): void {
-      const id = this.route.snapshot.paramMap.get('id')
-      this.service.buscarPorId(parseInt(id!)).subscribe((formulario) => {
-        this.formulario = formulario
+  ngOnInit(): void {
+    const id = this.route.snapshot.paramMap.get('id')
+    this.service.buscarPorId(parseInt(id!)).subscribe((formulario) => {
+      this.formulario = formulario
+    })
+  }
+
+  excluirFormulario(): void {
+    if (this.formulario.id) {
+      this.service.excluir(this.formulario.id).subscribe(() => {
+        this.router.navigate(['/listarFormulario'])
       })
     }
+  }
 
-    excluirFormulario() {
-      if(this.formulario.id) {
-        this.service.excluir(this.formulario.id).subscribe(() => {
-          this.router.navigate(['/listarFormulario'])
-        })
-      }
-    }
-
+  cancelar(): void {
+    this.router.navigate(['/listarFormulario'])
+  }
 }

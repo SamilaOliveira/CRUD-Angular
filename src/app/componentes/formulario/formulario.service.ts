@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class FormularioService {
 
-  private readonly API = 'http://localhost:3000/formularios';
+  private readonly API = 'http://localhost:3000/formulario';
 
   constructor(private http: HttpClient) { }
 
