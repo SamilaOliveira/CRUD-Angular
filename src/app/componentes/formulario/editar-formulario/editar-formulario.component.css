@@ -1,17 +1,21 @@
 .acoes {
   display: flex;
   justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .botao {
   margin: 5px;
+  margin-top: 70px;
+  width: 200px;
 }
 
-.editar-pensamentos {
+.editar-formulario {
   padding: 2rem 0;
 }
 
-.editar-pensamentos form {
+.editar-formulario form {
   background: #C4EDFF;
 
   border: none;
@@ -23,13 +27,13 @@
   padding: 2rem;
 }
 
-.editar-pensamentos form label {
+.editar-formulario form label {
   color: #154580;
   font-weight: bold;
   margin: 0 0 1rem;
 }
 
-.editar-pensamentos form .input {
+.editar-formulario form .input {
   border: none;
   height: 40px;
   padding: 1rem 2rem;
@@ -38,7 +42,7 @@
 }
 
 
-.editar-pensamentos form .textarea {
+.editar-formulario form .textarea {
   border: none;
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -64,12 +68,12 @@
   margin: 1rem 0 2rem;
 }
 
-.modelo .conteudo {
+.modelo .nome {
   margin: 1rem auto;
   word-wrap: break-word;
 }
 
-.modelo .autoria {
+.modelo .email {
   word-wrap: break-word;
 }
 
@@ -128,4 +132,18 @@ input[type='radio']:checked+.custom-radio {
 
 input[type='radio']:checked+.custom-radio span {
   background: #154580;
+}
+
+.mensagem__erro {
+  font-size: 12px;
+  margin-left: 5px;
+  color: red;
+  margin-top: -25px;
+  margin-bottom: 20px;
+}
+
+.botao__desabilitado {
+  margin: 5px;
+  margin-top: 70px;
+  width: 200px;
 }
